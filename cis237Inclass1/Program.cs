@@ -36,6 +36,32 @@ namespace cis237Inclass1
                     Console.WriteLine(employee.Reporting());
                 }
             }
+
+            UserInterface ui = new UserInterface();
+
+            int choice = ui.GetUserInput();
+
+            while (choice != 2)
+            {
+                if (choice == 1)
+                {
+                    string alloutput = "";
+
+                    foreach (Employee employee in employees)
+                    {
+                        if (employee != null)
+                        {
+                            alloutput += employee.Reporting() + Environment.NewLine;
+                        }
+                    }
+
+                    ui.PrintAllOutput(alloutput);
+                }
+                choice = ui.GetUserInput();
+            }
+            
+
+
         }
     }
 }
