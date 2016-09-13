@@ -2,7 +2,7 @@
 
 ## Author
 
-You fill this out
+David Hatten
 
 ## Description
 
@@ -14,8 +14,8 @@ This will be any notes I add for you
 
 ## Outside Resources Used
 
-You fill this out
+None
 
 ## Known Problems, Issues, And/Or Errors in the Program
 
-You fill this out
+None
