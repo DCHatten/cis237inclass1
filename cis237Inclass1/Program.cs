@@ -10,11 +10,11 @@ namespace cis237Inclass1
     {
         static void Main(string[] args)
         {
-            Employee myEmployee = new Employee("David", "Hatten", 697.36m);
+            //Employee myEmployee = new Employee("David", "Hatten", 697.36m);
 
-            Console.WriteLine(myEmployee.LastName + ", " + myEmployee.FirstName + ": " + myEmployee.WeeklySalary);
-            Console.WriteLine(myEmployee.Reporting());
-            Console.WriteLine(myEmployee);
+            //Console.WriteLine(myEmployee.LastName + ", " + myEmployee.FirstName + ": " + myEmployee.WeeklySalary);
+            //Console.WriteLine(myEmployee.Reporting());
+            //Console.WriteLine(myEmployee);
 
             Employee[] employees = new Employee[10];
 
@@ -29,13 +29,13 @@ namespace cis237Inclass1
             employees[8] = new Employee("Mister", "Spock", 250.00m);
             employees[9] = new Employee("Beverly", "Crusher", 225.00m);
 
-            foreach (Employee employee in employees)
-            {
-                if (employee != null)
-                {
-                    Console.WriteLine(employee.Reporting());
-                }
-            }
+            //foreach (Employee employee in employees)
+            //{
+            //    if (employee != null)
+            //    {
+            //        Console.WriteLine(employee.Reporting());
+            //    }
+            //}
 
             UserInterface ui = new UserInterface();
 
