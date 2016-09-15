@@ -40,9 +40,7 @@ namespace cis237Inclass1
             //    }
             //}
 
-            UserInterface ui = new UserInterface();
-
-            int choice = ui.GetUserInput();
+            int choice = UserInterface.GetUserInput();
 
             while (choice != 2)
             {

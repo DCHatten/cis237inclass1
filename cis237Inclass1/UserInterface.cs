@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace cis237Inclass1
 {
-    class UserInterface
+    static class UserInterface
     {
-        public int GetUserInput()
+        public static int GetUserInput()
         {
-            this.printMenu();
+            printMenu();
 
             string input = Console.ReadLine();
 
@@ -19,19 +19,19 @@ namespace cis237Inclass1
                 Console.WriteLine("That is not a valid entry");
                 Console.WriteLine("Please make a valid choice");
                 Console.WriteLine();
-                this.printMenu();
+                printMenu();
                 input = Console.ReadLine();
             }
 
             return Int32.Parse(input);
         }
 
-        public void PrintAllOutput(string allOutput)
+        public static void PrintAllOutput(string allOutput)
         {
             Console.WriteLine(allOutput);
         }
 
-        private void printMenu()
+        private static void printMenu()
         {
             Console.WriteLine("Whould would you like to do?");
             Console.WriteLine("1. Print List");
